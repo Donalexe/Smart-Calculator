@@ -1,0 +1,142 @@
+import java.util.Scanner;
+
+
+
+public class DSA {
+
+    
+    
+ 
+    public static void main(String[] args) {
+    // import scanner
+    Scanner sc = new Scanner(System.in);
+
+    // Declare the variables
+    int a;
+    int b = 1;
+    int c = 2;
+    int y = 3;
+    String name;
+    
+    // View message for user
+    System.out.println("\n--------- : Welcome To Smart Calculator : -----------");
+    
+    
+     // View message for user 
+      System.out.print("Welcome To The Smart Calculator What Is Your Name  : ");
+      name = sc.nextLine();
+    
+    
+    // View message for user
+    System.out.println("\nWelcome To The Smart Calculator "  + name + " What Process You Want To Calculate ? ");
+    System.out.println(b +" = Do you want a collection process ?? ");
+    System.out.println(c +" = Do you want the multiplication process ?? ");
+    System.out.println(y +" = Do you want the subtraction process ?? ");
+    System.out.print("Enter your answer : ");
+    a = sc.nextInt();
+    
+    
+    // start condition 1
+    while(a == b ){
+       
+       // Declare the variables
+       int nmr1;
+       int nmr2;
+       int rst;
+       
+       System.out.println("\n********** : Welcome To Collection Process : ***********");
+       
+       
+       // View message for user 
+       System.out.print("\nPlease Enter The First Number :  ");
+       nmr1 = sc.nextInt();
+       
+       // View message for user 
+       System.out.print("\nEnter The Second Number Please  :  ");
+       nmr2 = sc.nextInt();
+       
+       // Start a calculation
+       rst = nmr1 + nmr2; 
+       
+       //print result
+       System.out.print("\nYour Final Result :  " + rst);
+       
+       break;
+       
+    }
+    //fin condition
+    
+    
+    
+    
+    
+     // start condition 2 
+    while( a == c ){
+        
+       // Declare the variables
+       int nmr3;
+       int nmr4;
+       int rst1;
+       
+        System.out.println("\n********** : Welcome To Multiplication Process : ***********");
+       
+       // View message for user 
+       System.out.print("Please Enter The First Number  :  ");
+       nmr3 = sc.nextInt();
+       
+       // View message for user 
+       System.out.print("\nEnter The Second Number Please  :  ");
+       nmr4 = sc.nextInt();
+       
+        // Start a calculation
+       rst1 = nmr3 * nmr4;
+        
+       //print result
+       System.out.print("\nYour Final Result :  " + rst1 );
+              
+          break;
+       
+    }
+    //fin condition
+   
+    
+    
+    // start condition 3
+    while( a == y ){
+        
+         // Declare the variables
+        int nmr4;
+        int nmr5;
+        int rst;
+        
+        System.out.println("\n********** : Welcome To subtraction process : ***********");
+        
+        
+        // View message for user 
+        System.out.print("\nPlease Enter The First Number  :  ");
+        nmr4 = sc.nextInt();
+        
+        // View message for user 
+        System.out.print("\nPlease Enter The First Number  :   ");
+        nmr5 = sc.nextInt();
+        
+        // Start a calculation
+        rst = nmr4 - nmr5;
+       
+        //print result
+        System.out.print("\nYour Final Result :   " + rst );
+        
+        break;
+        
+    }
+    //fin condition
+    
+    
+    //View last message for user
+    System.out.println("\n");
+    System.out.println("\n********** : The Process Is Over Goodbye " + name + " : ***********");
+   
+            
+        
+} 
+}
